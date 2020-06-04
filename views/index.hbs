@@ -1,0 +1,34 @@
+{{>navbar}}
+{{>header}}
+<div class="container">
+    {{#if pintores}}
+    <a href="/inicio"><img src="/images/inicio.png" height="30" width="75"></a>
+    <br><br>
+        <table class="table table-dark table-hover">
+            <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>Nombre</td>
+                    <td>Nacionalidad</td>
+                    <td>Corriente</td>
+                    <td>Imagen</td>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each pintores}}
+                <tr>
+                    <td>{{_id}}</td>
+                    <td>{{nombre}}</td>
+                    <td>{{nacionalidad}}</td>
+                    <td>{{corriente}}</td>
+                    <td><img src="../images/{{pintura}}" height="200" width="200"></td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+
+    {{else}}
+        <div>no se encuentran pintores</div>
+    {{/if}}
+</div>
+{{>footer}}

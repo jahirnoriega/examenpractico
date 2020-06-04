@@ -1,0 +1,21 @@
+.info img{
+    float: left;
+    padding-right: 50px;
+
+}
+.info h3{
+    font-size: xx-large;
+    color: white;
+    background-color: black;
+}
+.info{
+    font-size: large;
+}
+.boton1 img{
+    float: left;
+    padding-right: 60px;
+}
+.boton2 img{
+    float: left;
+    padding-right: 60px;
+}
